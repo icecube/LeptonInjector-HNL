@@ -1,0 +1,11 @@
+.. -*- mode: rst -*- vim: ft=rst
+
+Production input location
+=========================
+
+Cross sections spline files for production can be found:
+
+``/data/ana/SterileNeutrino/IC86/HighEnergy/MC/scripts/jobs/files/xs_iso/``
+
+The ones in the resource directory are intended for
+testing purposes only.

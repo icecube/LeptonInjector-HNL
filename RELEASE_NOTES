@@ -1,0 +1,53 @@
+Release Notes
+=============
+
+October 2023, Julia Book (jbook@g.harvard.edu)
+---------------------------------------------
+Not technically an Icetray release note - reimplemented the LeptonInjector-HNL changes originally made by David Vanerom, Leander Fischer, and myself on an older version of icetray, not compatible with newer versions of python.
+
+main
+----
+
+June 22, 2023 don la dieu (nega at icecube.umd.edu)
+---------------------------------------------------
+IceTray Release v1.7.0
+
+* Make I3Tray.I3Tray and icecube.icetray.I3Tray the same thing. (#3102)
+* Remove all references to load_pybindings (#3086)
+* Remove BUILD_PYBINDINGS global cmake option.  We always build pybindings.
+
+Jul. 27, 2022 don la dieu (nega AT icecube.umd.edu)
+---------------------------------------------------
+IceTray Release v1.4.0
+
+* Drop support for Python 2
+* Make photopsline optional
+
+Feb. 22, 2022 don la dieu (nega AT icecube.umd.edu)
+---------------------------------------------------
+IceTray Release v1.3.0
+
+* General cleanups
+* Documentation updates
+
+Feb 25, 2019 Kotoyo Hoshina(hoshina@icecube.wisc.edu)
+-----------------------------------------------------
+* changed include path of ``I3CrossSection.h`` (from sim-services to phys-services)
+* Added release notes
+
+Oct 07, 2019 Ben Smithers (bsmithers@mail.icecube.wisc.edu)
+-----------------------------------------------------------
+* changed CMakeLists to include the hdf5 tool
+* fixed the header for writing LIC files
+* added module for writing LIC files as hdf5 files instead of binary files
+
+Apr 02, 2020 Ben Smithers
+-------------------------
+* removed hdf5 serializer, it was never quite finished
+* fixed memory leak found by @claudiok and with suggestion by @cweaver
+* merged into Combo trunk. Hurray!
+* wiped ``python/__init__.py`` of all the commented code.
+
+Apr 12, 2020 Ben Smithers
+-------------------------
+* allowed user to specify whether to append to a LIC file or overwrite it
