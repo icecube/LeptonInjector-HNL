@@ -390,7 +390,9 @@ namespace LeptonInjector_HNL{
 		void DAQ(boost::shared_ptr<I3Frame>);
 	private:
 		void AddParameters();
-		
+		// Added in debugging:
+		void init();
+
 		I3Context innerContext;
 		boost::shared_ptr<OutputCollector> collector;
 		std::queue<boost::shared_ptr<I3Frame> >& results;
@@ -398,6 +400,9 @@ namespace LeptonInjector_HNL{
 		std::deque<boost::movelib::unique_ptr<LeptonInjectorBase>> generators;
 		RangedInjectionConfiguration rangedConfig;
 		VolumeInjectionConfiguration volumeConfig;
+
+		// Added in debugging:
+		SET_LOGGER("MultiLeptonInjector");
 	};
     
 

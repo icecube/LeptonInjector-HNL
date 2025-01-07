@@ -7,8 +7,8 @@ namespace bp = boost::python;
 void register_HNLDecayEnergy()
 {
 	// map the HNLDecayEnergy namespace to a sub-module  
-	bp::object HNLDecayEnergyModule(bp::handle<>(bp::borrowed(PyImport_AddModule("LeptonInjector.HNLDecayEnergy"))));  
-	// make "from icecube.LeptonInjector import HNLDecayEnergy" work  
+	bp::object HNLDecayEnergyModule(bp::handle<>(bp::borrowed(PyImport_AddModule("LeptonInjector_HNL.HNLDecayEnergy"))));  
+	// make "from icecube.LeptonInjector_HNL import HNLDecayEnergy" work  
 	bp::scope().attr("HNLDecayEnergy") = HNLDecayEnergyModule;  
 	// set the current scope to the new sub-module  
 	bp::scope HNLDecayEnergy_scope = HNLDecayEnergyModule;  

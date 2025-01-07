@@ -12,6 +12,6 @@ public:
 	size_t FillRows(const BasicEventProperties& p, I3TableRowPtr rows);
 };
 
-} //namespace LeptonInjector
+} //namespace LeptonInjector_HNL
 
 #endif //LEPTONINJECTIONCONFIGURATIONCONVERTER_H

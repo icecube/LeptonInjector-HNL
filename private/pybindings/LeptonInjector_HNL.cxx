@@ -4,7 +4,7 @@
 #include <dataclasses/ostream_overloads.hpp>
 #include <tableio/converter/pybindings.h>
 #include <LeptonInjector_HNL/HNLDecayEnergy.h>
-#include <LeptonInjector_HNL/LeptonInjector.h>
+#include <LeptonInjector_HNL/LeptonInjector_HNL.h>
 #include <LeptonInjector_HNL/converter/LeptonInjectionConfigurationConverter.h>
 
 //void register_HNLDecayEnergy();
